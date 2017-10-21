@@ -1,0 +1,64 @@
+{
+  "name": "labebet",
+  "version": "1.0.0",
+  "description": "labebet",
+  "author": "jscari <js.carinos@gmail.com>",
+  "private": true,
+  "engines": {
+    "node": "8.4.0",
+    "npm": "5.2.0"
+  },
+  "scripts": {
+    "nuxt": "nuxt",
+    "dev": "nodemon index.js",
+    "build": "nuxt build",
+    "start": "node index.js",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcrypt": "^1.0.3",
+    "bulma": "^0.5.2",
+    "dotenv": "^4.0.0",
+    "jsonwebtoken": "^8.0.1",
+    "koa": "^2.3.0",
+    "koa-better-body": "^3.0.4",
+    "koa-cors": "0.0.16",
+    "koa-jwt": "^3.2.2",
+    "koa-router": "^7.2.1",
+    "koa-subdomain": "^2.1.0",
+    "moment": "^2.18.1",
+    "nuxt": "^1.0.0-rc11",
+    "pg": "^6.4.2",
+    "pg-hstore": "^2.3.2",
+    "pikaday": "^1.6.1",
+    "sequelize": "^4.8.4",
+    "uuid": "^3.1.0",
+    "vue-cookie": "^1.1.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "components/*",
+      "layouts/*",
+      "middleware/*",
+      "pages/*",
+      "store/*"
+    ]
+  }
+}
